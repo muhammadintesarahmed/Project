@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+	<hibernate-mapping>
+	<class name="com.hiber.Hib2.Address" table="address">
+	<id name="aid" type="int" column="aid">
+	<generator class="foreign">
+	<param name="property">employee</param>
+	</generator>
+	</id>
+	<property name="addressline"/>
+	<property name="city"/>
+	<property name="state"/>
+	<property name="country"/>
+	<one-to-one name="employee"></one-to-one>
+	</class>
+	</hibernate-mapping>

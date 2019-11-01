@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+	<hibernate-mapping>
+	<class name="com.hiber.Hib2.Employee" table="employee">
+	<id name="eid" type="int" column="eid">
+	<generator class="increment"/>
+	</id>
+	<property name="ename" column="ename"/>
+	<one-to-one name="address" cascade="persist"></one-to-one>
+	</class>
+	</hibernate-mapping>
