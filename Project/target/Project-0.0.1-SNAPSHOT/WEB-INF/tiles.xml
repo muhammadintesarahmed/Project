@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/jsp/layout.jsp">  
+         <put-attribute name="title" value="" />    
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />  
+    </definition>  
+    <definition name="signIn" extends="base.definition">    
+        <put-attribute name="body" value="/WEB-INF/jsp/signIn.jsp" />  
+    </definition>  
+  
+    <definition name="createAccount" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/createAccount.jsp" />  
+    </definition> 
+    
+     <definition name="hello" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/hello.jsp" />  
+    </definition>
+    
+     <definition name="empty" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/empty.jsp" />  
+    </definition>
+    
+     <definition name="error" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />  
+    </definition>
+    
+     <definition name="men" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/men.jsp" />  
+    </definition>
+    
+     <definition name="women" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/women.jsp" />  
+    </definition>
+    
+     <definition name="kids" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/kids.jsp" />  
+    </definition>
+    
+      <definition name="product" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/product.jsp" />  
+    </definition>
+    
+      <definition name="admin" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />  
+    </definition>
+    
+    <definition name="cart" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/cart.jsp" />  
+    </definition>
+    
+     <definition name="order" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/order.jsp" />  
+    </definition>
+    
+    <definition name="falseUser" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/falseUser.jsp" />  
+    </definition>
+    
+     <definition name="logout" extends="base.definition">   
+        <put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />  
+    </definition>
+    
+    
+    
+   
+    
+    
+    
+  
+</tiles-definitions>  
